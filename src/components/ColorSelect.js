@@ -94,6 +94,8 @@ class ColorSelect extends Component {
                                 <form className="box">
                                     <div className="field has-text-centered">
                                         <img src="https://s3.amazonaws.com/marshmallows/ColorBotLogo.jpeg" width="167" />
+                                    </div>
+                                    <div className="field has-text-centered">
                                         <label>COLOR•BOT</label>
                                     </div>
                                     <div className="field has-text-centered">
@@ -118,7 +120,7 @@ class ColorSelect extends Component {
                                                     <div className="column">
                                                         <div className="columns is-multiline">
                                                             {selectedColorsDirty.map(selectedColor => (
-                                                                <ColorCircle style={{margin: '0 5px'}} key={selectedColor} color={selectedColor} className="column is-narrow" />
+                                                                <ColorCircle style={{ margin: '0 5px' }} key={selectedColor} color={selectedColor} className="column is-narrow" />
                                                             ))}
                                                         </div>
                                                     </div>
@@ -135,7 +137,7 @@ class ColorSelect extends Component {
                                             <div className="column">
                                                 <div className="columns is-multiline">
                                                     {selectedColors.map(selectedColor => (
-                                                        <ColorCircle style={{margin: '0 5px'}} key={selectedColor} color={selectedColor} className="column is-narrow" />
+                                                        <ColorCircle style={{ margin: '0 5px' }} key={selectedColor} color={selectedColor} className="column is-narrow" />
                                                     ))}
                                                 </div>
                                             </div>

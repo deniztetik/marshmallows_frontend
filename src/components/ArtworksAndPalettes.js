@@ -11,7 +11,7 @@ import styled from 'styled-components';
 const ArtworkAndPalette = styled.div``;
 
 const ArtworksAndPalletesImage = styled.img`
-  max-height: 200px;
+  max-height: 400px;
 `;
 
 const ColorsCard = styled.div``;
@@ -34,15 +34,15 @@ const ArtworksAndPalettes = ({ tryDifferentColors }) =>
         <div className="container has-text-centered">
             <button className="button is-dark" onClick={tryDifferentColors}>Try Different Colors</button>
             {artists.map(artist =>
-                <div className="hero">
+                <div className="hero" key={artist}>
                     <div className="hero-body">
                         <div className="container">
-                            <ArtworkAndPalette className="columns is-centered box" key={artist}>
+                            <ArtworkAndPalette className="columns is-vcentered is-centered box">
                                 <div className="column">
-                                    <ArtworksAndPalletesImage src={`../images_and_palettes/${artist}/${artist}_image.jpg`} />
+                                    <ArtworksAndPalletesImage src={`https://s3.amazonaws.com/marshmallows/images_and_palettes/${artist}/${artist}_image.jpg`} />
                                 </div>
                                 <div className="column">
-                                    <ArtworksAndPalletesImage src={`../images_and_palettes/${artist}/${artist}_palette.png`} />
+                                    <ArtworksAndPalletesImage src={`https://s3.amazonaws.com/marshmallows/images_and_palettes/${artist}/${artist}_palette.png`} />
                                 </div>
                                 <ColorsCard className="column card box">
                                     <p className="title" style={{ color: "black" }}>
