@@ -16,10 +16,12 @@ const ArtworksAndPalletesImage = styled.img`
 
 const ColorsCard = styled.div``;
 
-const ColorText = styled.div`
-  align-self: center;
-  margin: 0 10px;
-`;
+const ColorText = styled.div``;
+
+// const ColorText = styled.div`
+//   align-self: center;
+//   margin: 0 10px;
+// `;
 
 const artists = [
     'balenciaga',
@@ -49,25 +51,23 @@ const ArtworksAndPalettes = ({ tryDifferentColors }) =>
                                         Strong Match
                                     </p>
                                     <p>Score: 100%</p>
-                                    <div className="card-content">
-                                        <div className="media">
-                                            <ColorCircle className="media-left" color="grey" />
-                                            <ColorText className="media-content">Grey</ColorText>
-                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
-                                            <ColorText className="media-content">Percentage: <strong>70%</strong></ColorText>
-                                        </div>
-                                        <div className="media">
-                                            <ColorCircle className="media-left" color="blue" />
-                                            <ColorText className="media-content">Blue</ColorText>
-                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
-                                            <ColorText className="media-content">Percentage: <strong>20%</strong></ColorText>
-                                        </div>
-                                        <div className="media">
-                                            <ColorCircle className="media-left" color="orange" />
-                                            <ColorText className="media-content">Orange</ColorText>
-                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
-                                            <ColorText className="media-content">Percentage: <strong>10%</strong></ColorText>
-                                        </div>
+                                    <div className="columns is-centered is-vcentered" style={{ paddingLeft: '5px', paddingRight: '5px' }}>
+                                        <ColorCircle className="column is-narrow" color="grey" />
+                                        <ColorText className="column">Grey</ColorText>
+                                        <ColorText className="column">Hex: <strong>#FFFFFF</strong></ColorText>
+                                        <ColorText className="column">Percentage: <strong>70%</strong></ColorText>
+                                    </div>
+                                    <div className="columns is-centered is-vcentered" style={{ paddingLeft: '5px', paddingRight: '5px' }}>
+                                        <ColorCircle className="column is-narrow" color="blue" />
+                                        <ColorText className="column">Blue</ColorText>
+                                        <ColorText className="column">Hex: <strong>#FFFFFF</strong></ColorText>
+                                        <ColorText className="column">Percentage: <strong>20%</strong></ColorText>
+                                    </div>
+                                    <div className="columns is-centered is-vcentered" style={{ paddingLeft: '5px', paddingRight: '5px' }}>
+                                        <ColorCircle className="column is-narrow" color="orange" />
+                                        <ColorText className="column">Orange</ColorText>
+                                        <ColorText className="column">Hex: <strong>#FFFFFF</strong></ColorText>
+                                        <ColorText className="column">Percentage: <strong>10%</strong></ColorText>
                                     </div>
                                 </ColorsCard>
                             </ArtworkAndPalette>
@@ -76,6 +76,6 @@ const ArtworksAndPalettes = ({ tryDifferentColors }) =>
                 </div>
             )}
         </div>;
-    </section>
+    </section >
 
 export default ArtworksAndPalettes;
