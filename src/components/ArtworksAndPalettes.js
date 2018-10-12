@@ -47,20 +47,26 @@ const ArtworksAndPalettes = ({ tryDifferentColors }) =>
                                 <ColorsCard className="column card box">
                                     <p className="title" style={{ color: "black" }}>
                                         Strong Match
-                    </p>
+                                    </p>
                                     <p>Score: 100%</p>
                                     <div className="card-content">
                                         <div className="media">
                                             <ColorCircle className="media-left" color="grey" />
                                             <ColorText className="media-content">Grey</ColorText>
+                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
+                                            <ColorText className="media-content">Percentage: <strong>70%</strong></ColorText>
                                         </div>
                                         <div className="media">
                                             <ColorCircle className="media-left" color="blue" />
                                             <ColorText className="media-content">Blue</ColorText>
+                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
+                                            <ColorText className="media-content">Percentage: <strong>20%</strong></ColorText>
                                         </div>
                                         <div className="media">
                                             <ColorCircle className="media-left" color="orange" />
                                             <ColorText className="media-content">Orange</ColorText>
+                                            <ColorText className="media-content">Hex: <strong>#FFFFFF</strong></ColorText>
+                                            <ColorText className="media-content">Percentage: <strong>10%</strong></ColorText>
                                         </div>
                                     </div>
                                 </ColorsCard>
